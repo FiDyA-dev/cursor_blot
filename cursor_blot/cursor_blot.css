@@ -1,0 +1,19 @@
+#cursorCanvasOverlay {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+@media (min-width: 992px) {
+    * {
+        cursor: none !important;
+    }
+}
+@media (max-width: 991.98px) {
+    .follow-cursor {
+        display: none;
+    }
+}
