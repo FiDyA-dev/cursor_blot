@@ -25,7 +25,7 @@ const cursorBlot = new class {
                     y: e.pageY - pageScrollPos.y
                 });
 
-                while (cursorPositions.length > 10) {
+                while (cursorPositions.length > 8) {
                     cursorPositions.pop();
                 }
             })
@@ -83,7 +83,7 @@ const cursorBlot = new class {
             bufferContext.strokeStyle = blot.color;
             for (let i = 1; i < cursorPositions.length; i++) {
                 let pos = cursorPositions[i];
-                bufferContext.lineWidth = 20 - i;
+                bufferContext.lineWidth = 20 - i * 2;
 
                 bufferContext.beginPath();
                 bufferContext.moveTo(prevPos.x, prevPos.y);
