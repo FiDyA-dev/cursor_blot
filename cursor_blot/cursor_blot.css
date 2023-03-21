@@ -13,7 +13,7 @@
     }
 }
 @media (max-width: 991.98px) {
-    .follow-cursor {
+    #cursorCanvasOverlay {
         display: none;
     }
 }
